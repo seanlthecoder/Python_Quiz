@@ -38,3 +38,8 @@ If you find any issues with the quiz or want to add more questions and features,
 
 This project is licensed under the MIT License - see the LICENSE.md file for details.
 
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+
+
+
