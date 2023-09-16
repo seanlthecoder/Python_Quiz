@@ -2,40 +2,43 @@ print("Welcome to my computer quiz")
 
 playing = input("Do you want to play? ")
 
-if playing != "yes":
+if playing.lower() != "yes":
     quit()
 
-print("okay! Let's play :")
+print("Okay! Let's play:")
+score = 0
 
-answer = input("what does CPU stand for? ")
+answer = input("Who directed 'Inception'? ")
 
-if answer == "central processing unit":
+if answer.lower() == "christopher nolan":
     print('Correct!')
-
+    score += 1
 else:
     print("Incorrect")
 
-answer = input("what does CPU stand for? ")
+answer = input("What was the last film Christopher Nolan directed? ")
 
-if answer == "central processing unit":
+if answer.lower() == "oppenheimer":
     print('Correct!')
-
+    score += 1
 else:
     print("Incorrect")
 
-    answer = input("what does CPU stand for? ")
+answer = input("Which Batman film is Nolan's best? ")
 
-if answer == "central processing unit":
+if answer.lower() == "the dark knight":
     print('Correct!')
-
+    score += 1
 else:
     print("Incorrect")
 
+answer = input("Who played Bane in 'The Dark Knight Rises'? ")
 
-    answer = input("what does CPU stand for? ")
-
-if answer == "central processing unit":
+if answer.lower() == "tom hardy":
     print('Correct!')
-
+    score += 1
 else:
     print("Incorrect")
+
+print("You got " + str(score) + " questions correct!")
+print("You got " + str((score / 4) * 100) + " %.")
